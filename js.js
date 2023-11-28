@@ -10,9 +10,9 @@ var swiper = new Swiper(".mySwiper", {
   });
 
 // скрыть-показать все
+const container = document.querySelector('.get-started__button');
 
 document.querySelector('.get-started__showMore').addEventListener('click', function() {
-const container = document.querySelector('.get-started__button');
   if (container.style.height === '200px') {
     container.style.height = '';
     this.textContent = 'Скрыть';
